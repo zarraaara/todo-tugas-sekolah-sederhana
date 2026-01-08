@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Tugas Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div class="app" id="loginBox">
+    <h2>🔐 Login</h2>
+    <input type="text" id="username" placeholder="Nama siswa">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- TODO -->
+  <div class="app hidden" id="todoBox">
+    <h2>📚 To-Do Tugas</h2>
+    <p id="welcome"></p>
+
+    <input type="text" id="taskInput" placeholder="Nama tugas">
+    <input type="date" id="dateInput">
+    <button onclick="addTask()">Tambah Tugas</button>
+
+    <ul id="taskList"></ul>
+
+    <button class="logout" onclick="logout()">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
